@@ -20,31 +20,12 @@ This is the base node js template, which anyone can use as it has  been prepared
 
 
   - inside the srcconfig folder create a file named as config.json and write the folllowing code.
-  '''
-  {
-  "development": {
-    "username": "root",
-    "password": null,
-    "database": "database_development",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  }
-}
-'''
+  ---
+  - Goinside of src folder and run the follwing commmand
+  ```
+  npx sequelize init
+  ```
+
 - if you are setting up development envi,then write the username and password of your db and in dialect mention whatever db your are using example- myssql,etc
 
-- if you are setting test or prod envi , make sure your are  also replace the host eith the hosted db url.
+- if you are setting test or prod envi , make sure your are  also replace the host eith
